@@ -9,8 +9,6 @@ import math
 image_id = None
 global cap
 
-
-
 def videos(inserida):
     def inserirFoto():
         global cap
@@ -82,8 +80,8 @@ def videos(inserida):
                 
             root.after(20,show_frame)
         else:
-            suporteImg.menuVoltar(root)   
             mixer.music.stop()
+            suporteImg.menuVoltar(root)   
              
 
 

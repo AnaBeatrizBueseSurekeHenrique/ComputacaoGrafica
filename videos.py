@@ -11,6 +11,7 @@ global cap
 
 image_id = None
 def videos(inserida):
+    
     global filtro 
     global qntdButoes
    
@@ -20,6 +21,7 @@ def videos(inserida):
     itens = []
     
     filtro = 0
+    
     def show_frame():
         global image_id
         ret, frame = cap.read()
@@ -107,6 +109,7 @@ def videos(inserida):
                 botao, botao2, label, itens =  suporteImg.criacaoBotoes(botao, botao2, itens, label, executarAdd, executarDiminui, i, root, texto, entrada)            
 
     cap = cv2.VideoCapture(inserida)
+    
     def addValor(i, texto):
         global itens
         global maxVal
